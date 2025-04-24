@@ -1,0 +1,27 @@
+.upper {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  position: relative;
+  padding: 8px 20px;
+  border-bottom: 1px solid var(--border-color);
+}
+.lower {
+  height: 100%;
+  padding: 8px 20px;
+  background-color: var(--gray-light);
+  border-radius: 10px;
+  padding-bottom: 30px;
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+.largeModal {
+  min-width: 39%;
+  height: 80%;
+  z-index: 1002;
+}

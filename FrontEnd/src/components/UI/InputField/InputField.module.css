@@ -1,0 +1,182 @@
+.messageInputContainer {
+  width: 100%;
+  background-color: #fff;
+  max-width: 100%;
+  padding: 10px 10px 0;
+  box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+}
+
+.input_field {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  width: 100%;
+}
+
+.message_input {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 0;
+}
+
+.upper_row_icons,
+.lower_row_icons {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  height: 40px;
+  gap: 15px;
+}
+
+.upper_row_icons {
+  background: var(--gray-light);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.lower_row_icons {
+  justify-content: space-between;
+}
+
+.upper_icons,
+.lower_icons {
+  width: 20px;
+  height: 20px;
+  transition: opacity 0.5s;
+}
+
+.upper_icons,
+.right_icons {
+  opacity: 0.25;
+}
+
+/* .upper_icons:hover {
+  opacity: 0.6;
+  cursor: pointer;
+} */
+
+.textInput {
+  width: 100%;
+  padding: 10px;
+  font-size: var(--font-size);
+  color: var(--text-color-black);
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+.textarea {
+  width: 100%;
+  min-height: 40px;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  resize: none;
+  font-size: 14px;
+  outline: none;
+  background: transparent;
+}
+
+.box11 {
+  width: 1px;
+  height: 18px;
+  background-color: var(--divider-color);
+}
+
+.right_icons,
+.left_icons {
+  display: flex;
+  /* gap: 15px; */
+}
+
+.left_icons {
+  opacity: 0.9;
+  transition: 0.3s;
+}
+
+.right_icons,
+.activeSend {
+  align-items: center;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.lower_icon_style {
+  margin: 0 12px;
+  border-radius: var(--border-radius);
+}
+
+.lower_icon_style:hover {
+  background-color: var(--gray-light);
+  opacity: 1;
+}
+
+.activeSend {
+  background: #007a5a;
+  color: white;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.sendBtns {
+  display: flex;
+  padding: 5px 10px;
+}
+
+.activeSend .sendBtns_send:hover,
+.activeSend .sendBtns_dropdown:hover {
+  background-color: #14866d;
+}
+
+
+/* new line hint */
+.newLineHint {
+  color: #aaa;
+  font-size: 13px;
+  padding: 5px 0;
+}
+
+.hintText {
+  transition: all var(--transition-time) linear;
+  opacity: 0;
+
+}
+
+.hintText:hover {
+  cursor: pointer;
+  color: var(--link-color);
+  text-decoration: underline;
+}
+
+.showHint {
+  opacity: 1;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+/* new line hint */
+
+/* thread checkbox */
+.checkBox {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0 8px;
+  user-select: none;
+  margin-bottom: 5px;
+}
+
+.checkBox_text,
+.checkBox_channelName {
+  color: var(--text-color-grey);
+  font-size: 15px;
+}
+.checkBox_channelName {
+  font-weight: bold;
+}
+
+/* thread checkbox */

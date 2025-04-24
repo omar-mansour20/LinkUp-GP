@@ -1,18 +1,19 @@
 :root {
   /* Colors */
-  --primary-color: #193a55;
-  --secondary-color: #2f4f68;
+  --primary-color: #163d5c;
+  --secondary-color: #2d5878;
   --active-color: #e3f8ff;
-  --sidebar-hover: #3c6685;
+  --sidebar-hover: #356c8e;
   --text-color-grey: #666666;
   --text-color-black: #333333;
+  --button-text-color: #1d1c1d;
   --sidebar-text-color: rgba(227, 248, 255, 0.8);
   --border-color: #ccc;
   --white-btn-hover-color: #f0f0f0;
   --divider-color: #ddd;
   --link-color: #1264a3;
   --gray-dark: #888;
-  --gray-light: #f0f0f0;
+  --gray-light: #f8f8f8;
   --error-color: #e74c3c; /* الأحمر للأخطاء */
   --success-color: #27ae60; /* الأخضر للنجاح */
   --input-border-error: #f5b7b1; /* حدود حمراء باهتة */

@@ -1,0 +1,67 @@
+.dropdownContainer {
+  position: relative;
+}
+
+.dropdownMenu,
+.iconDropdownMenu {
+  position: absolute;
+  /* top: 50%; */
+  right: -2%;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 10px 0;
+  min-width: 250px;
+  z-index: 1000;
+  white-space: nowrap;
+}
+.iconDropdownMenu {
+  right: -100px;
+}
+.dropdownMenu p,
+.iconDropdownMenu p {
+  padding: 3px 20px;
+  cursor: pointer;
+  color: #333;
+  font-weight: 400;
+  font-size: 15px;
+  transition: background 0.2s ease;
+}
+.normal:hover {
+  background: #1264a3;
+  color: #ffffff;
+}
+.dropdownIcons {
+  margin-right: 10px;
+  font-weight: 500;
+  color: var(--text-color-grey);
+  transition: color 0.2s ease;
+}
+.dropdownMenu p:hover .dropdownIcons,
+.iconDropdownMenu p:hover .dropdownIcons {
+  color: #ffffff;
+}
+.danger {
+  color: #e01e5a;
+  transition: 0.2s ease;
+}
+.danger:hover {
+  color: white;
+  background-color: #e01e5a;
+}
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+/* ✅ تأكد أن الأيقونات لا تؤثر لو لم تكن موجودة */
+.icon {
+  margin-right: 8px;
+  display: inline-flex;
+  align-items: center;
+}

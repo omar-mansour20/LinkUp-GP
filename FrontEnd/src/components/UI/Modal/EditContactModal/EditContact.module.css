@@ -1,0 +1,93 @@
+.contactModal {
+  width: 35%;
+  background: white;
+  border-radius: 8px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+}
+
+label {
+  margin: 10px 20px;
+}
+.mailLabel {
+  margin-top: 10px;
+  font-weight: 700;
+  .icon {
+    margin-right: 5px;
+    text-align: center;
+  }
+}
+.readOnlyInput {
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: var(--border-radius);
+  cursor: not-allowed;
+  margin: 0 20px 10px 20px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.phoneInput {
+  margin: 0 20px 15px 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: var(--border-radius);
+  transition: all 0.3s ease;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.phoneInput:focus {
+  border-color: #1264a3;
+  box-shadow: 0 0 5px #bbe1f1;
+  outline: none;
+}
+
+.buttons {
+  margin: 10px 0;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border-color);
+}
+
+button {
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: var(--border-radius);
+  border: none;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+button[type="submit"] {
+  background-color: #007a5a;
+  color: white;
+  margin-right: 20px;
+  transition: 0.3s;
+  &:hover {
+    background-color: #006e50;
+  }
+}
+button[type="button"] {
+  background-color: transparent;
+  color: #1d1c1d;
+  border: 1px solid var(--border-color);
+  margin-right: 0;
+  transition: 0.3s;
+  &:hover {
+    background-color: #f8f8f8;
+  }
+}
+h2 {
+  font-size: 22px;
+  font-weight: 900;
+  padding: 20px;
+  border-bottom: 1px solid var(--border-color);
+}

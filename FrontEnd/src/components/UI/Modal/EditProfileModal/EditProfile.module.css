@@ -1,0 +1,204 @@
+.profileModal {
+  width: 45%;
+  height: 90%;
+  background: white;
+  border-radius: 8px;
+  color: #1d1c1d;
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.modalTitle {
+  padding: 20px;
+  margin-bottom: 15px;
+  font-size: 22px;
+  font-weight: 900;
+  align-items: center;
+  position: sticky;
+  z-index: 10;
+  top: 0;
+  background-color: white;
+}
+
+.profileContainer {
+  display: flex;
+  gap: 20px;
+}
+
+.form {
+  /* flex: 1; */
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  :focus {
+    border-color: #1264a3;
+    box-shadow: 0 0 5px #bbe1f1;
+    outline: none;
+  }
+}
+.form label {
+  font-weight: 700;
+  font-size: 15px;
+  margin: 15px 0 8px 0px;
+}
+
+.form input,
+.form .dropdownHeader {
+  width: 100%;
+  padding: 13px 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  font-size: 18px;
+  font-weight: 400;
+}
+.description {
+  font-size: 13px;
+  color: #454447;
+  margin-bottom: 10px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 15px;
+  gap: 15px;
+  border-top: 1px solid var(--border-color);
+  padding: 20px 0;
+}
+.recordButton {
+  width: 30%;
+}
+.uploadButton {
+  width: 100%;
+}
+.cancelButton,
+.recordButton,
+.uploadButton {
+  padding: 10px;
+  background-color: transparent;
+  color: #1d1c1d;
+  border: 1px solid var(--border-color);
+  transition: 0.3s;
+  &:hover {
+    background-color: #f8f8f8;
+  }
+}
+
+.saveButton {
+  padding: 10px;
+  border: none;
+  background-color: #007a5a;
+  color: white;
+  margin-right: 20px;
+  transition: 0.3s;
+  &:hover {
+    background-color: #006e50;
+  }
+}
+
+.upperSection {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+.profilePhotoSection {
+  margin-top: -15px;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  .profilePhotoPlaceholder {
+    margin-top: -10px;
+    width: 100%;
+    height: 100%;
+    background: var(--secondary-color);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .photo {
+      color: var(--active-color);
+      font-size: 160px;
+    }
+  }
+}
+.selectBox {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #333;
+  appearance: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  width: 100%;
+  font-size: 14px;
+}
+
+.dropdownHeader {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdownList {
+  position: absolute;
+  bottom: 50%;
+  width: 100%;
+  background: white;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  margin-top: 5px;
+  list-style: none;
+  padding: 0;
+  max-height: 200px;
+  overflow-y: auto;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdownItem {
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.dropdownItem:hover {
+  background-color: #1264a3;
+  color: white;
+  .check {
+    background-color: #1264a3;
+    color: white;
+  }
+}
+
+.selected {
+  color: #1264a3;
+}
+
+.check {
+  margin-right: 8px;
+  font-size: 16px;
+  color: #1264a3;
+}
+
+.arrow {
+  font-size: 22px;
+}

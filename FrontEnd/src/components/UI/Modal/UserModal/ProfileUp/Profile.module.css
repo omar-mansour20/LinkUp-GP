@@ -1,0 +1,77 @@
+/*!!!!!!!!!!!!!!!! profile section !!!!!!!!!!!!!!!!*/
+.upperSection {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  position: relative;
+  flex: 0 0 auto;
+  .profileContainer {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    .frameWrapper {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 4px 0px;
+      position: relative;
+      flex: 1;
+      flex-grow: 1;
+      .profileDetails {
+        display: flex;
+        height: 78px;
+        align-items: center;
+        gap: 16px;
+        position: relative;
+        flex: 1;
+        flex-grow: 1;
+        .profileImage {
+          position: relative;
+          width: 72px;
+          height: 72px;
+        }
+        .info {
+          display: inline-flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 4px;
+          position: relative;
+          flex: 0 0 auto;
+          .name {
+            position: relative;
+            width: fit-content;
+            margin-top: -1px;
+            white-space: nowrap;
+            color: #1d1c1d;
+            font-weight: 900;
+            font-size: 22px;
+          }
+          .role {
+            position: relative;
+            width: fit-content;
+            font-family: "Lato-Regular", Helvetica;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 18px;
+            .span {
+              color: #1d1c1d;
+            }
+          }
+        }
+      }
+    }
+  }
+  .actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 8px 8px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+}

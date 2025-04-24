@@ -1,0 +1,139 @@
+/*!!!!!!!!!!!!!!!! About section !!!!!!!!!!!!!!!!*/
+.detailsContainer {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  margin-top: 25px;
+  position: relative;
+  flex: 0 0 auto;
+  .section1 {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1px;
+    padding: 16px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    &:hover {
+      background-color: var(--gray-light);
+      cursor: pointer;
+    }
+    .topicBar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      .addTopic {
+        position: relative;
+        margin-top: -1px;
+        font-weight: 700;
+        font-size: 15px;
+        color: #1d1c1d;
+      }
+      .edit {
+        color: #0b4c8c;
+        font-size: 13px;
+        font-weight: 700;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    .addButton {
+      font-weight: 400;
+      font-size: 15px;
+      color: rgba(29, 28, 29, 0.7);
+      position: relative;
+    }
+  }
+  .section2 {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 16px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    .subSection {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      position: relative;
+      width: 100%;
+      .icon {
+        font-size: 22.5px;
+        font-weight: 400;
+        color: #1d1c1d;
+      }
+      .time {
+        position: relative;
+        width: 144px;
+      }
+    }
+    .subSection2 {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      position: relative;
+      width: 100%;
+      .icon {
+        font-size: 22.5px;
+        font-weight: 400;
+        color: #1d1c1d;
+      }
+      .mail {
+        color: #0b4c8c;
+        &:hover {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    }
+    .viewProfile {
+      font-size: 15px;
+      font-weight: 700;
+      color: #0b4c8c;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  .section3 {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 16px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    &:hover {
+      background-color: var(--gray-light);
+      cursor: pointer;
+    }
+    .icon {
+      position: relative;
+      width: 24px;
+      height: 24px;
+      background-size: 100% 100%;
+    }
+    .p {
+      position: relative;
+      width: 469px;
+    }
+  }
+}

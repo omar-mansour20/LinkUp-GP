@@ -1,0 +1,245 @@
+.profileCard {
+  background: #ffffff;
+  padding: 0 20px 20px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.profileHeader {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 0;
+  color: #1d1c1d;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #666;
+}
+
+.closeButton:hover {
+  color: #000;
+}
+
+.profileImageContainer {
+  margin-bottom: 15px;
+}
+
+.profileImage {
+  width: 256px;
+  height: 256px;
+  border-radius: 10px;
+  padding: 20px;
+  color: var(--active-color);
+  background-color: var(--secondary-color);
+}
+
+.profileInfo {
+  text-align: left;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.name {
+  font-size: 22px;
+  font-weight: 900;
+  color: #1d1d1d;
+  margin-bottom: 5px;
+}
+
+.jobTitle,
+.gender {
+  font-size: 15px;
+  font-weight: 400;
+  color: #1d1c1d;
+  margin-bottom: 8px;
+}
+
+.jobTitle:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.status {
+  font-size: 15px;
+  color: #1d1c1d;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.statusIcon {
+  width: 10px;
+  height: 10px;
+  background: #f5c518;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.local {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.local .clockIcon {
+  font-size: 20px;
+  color: #1d1c1d;
+}
+
+.local .localTime {
+  font-size: 15px;
+  color: #1d1c1d;
+}
+
+.profileActions {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.messageButton,
+.huddleButton {
+  background: #0b4c8c;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.messageButton:hover,
+.huddleButton:hover {
+  background: #083b6e;
+}
+
+.profileAbout {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  width: 100%;
+  text-align: left;
+  border-top: 2px solid var(--divider-color);
+  padding-top: 15px;
+}
+
+.aboutTitle {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.aboutText {
+  color: #1264a3;
+  font-size: 15px;
+}
+
+.aboutText:hover span {
+  text-decoration: underline;
+}
+
+.aboutText strong {
+  font-size: 13px;
+  color: rgba(29, 28, 29, 0.7);
+}
+
+.aboutCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.aboutCard:hover .copyIcon {
+  opacity: 1;
+}
+
+.aboutLeft {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icons {
+  background-color: var(--gray-dark);
+  padding: 7.5px;
+  border-radius: var(--border-radius);
+  font-size: 35px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: flex-start;
+  padding: 7px 0;
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+}
+
+.actionIcons {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1d1c1d;
+}
+
+.arrowDown {
+  font-size: 10px;
+  margin-left: 7.5px;
+}
+
+.copyIcon {
+  font-size: 15px;
+  font-weight: 700;
+  color: #1d1c1d;
+  border-radius: var(--border-radius);
+  border: 1.5px solid var(--border-color);
+  width: 30px;
+  height: 30px;
+  padding: 6px;
+  opacity: 0;
+}
+
+.copyIcon:hover {
+  background-color: #f8f8f8;
+}
+
+.closeIcon {
+  font-size: 25px;
+  color: #1d1c1d;
+}
+
+/******************************* Layout ****************************/
+/* .container {
+  display: flex;
+  height: 100vh;
+}
+.center {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.right {
+  width: 320px;
+  flex-shrink: 0;
+  background-color: #f8f8f8;
+  border-left: 1px solid #ddd;
+} */

@@ -1,0 +1,90 @@
+.wrapper {
+  position: relative;
+}
+
+.userIcon {
+  cursor: pointer;
+  padding: 8px;
+  color: white;
+}
+
+.dropdown {
+  position: absolute;
+  bottom: 55px;
+  left: 0;
+  background-color: var(--gray-light);
+  /* color: black; */
+  border-radius: 8px;
+  padding: 8px 0;
+  width: 275px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 14px;
+}
+
+.profile {
+  color: #1d1c1d;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-bottom: 1px solid #3c4146;
+  font-weight: 600;
+}
+
+.statusDot {
+  width: 9px;
+  height: 9px;
+  background-color: #2eb67d;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.option {
+  padding: 10px 16px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.2s;
+  position: relative;
+  color: #1d1c1d;
+}
+
+.option:hover {
+  background: #1264a3;
+  color: #ffffff;
+}
+
+.arrowIcon {
+  margin-left: 8px;
+  transform: rotate(-90deg);
+  color: #bbb;
+}
+
+.subDropdown {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  margin-left: 4px;
+  background-color: var(--gray-light);
+  border-radius: 8px;
+  padding: 6px 0;
+  width: 225px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  z-index: 200;
+}
+
+.subOption {
+  padding: 10px 16px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.2s;
+  color: #1d1c1d;
+}
+
+.subOption:hover {
+  background: #1264a3;
+  color: #ffffff;
+}
